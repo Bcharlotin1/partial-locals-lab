@@ -21,7 +21,12 @@ class StudentsController < ApplicationController
   end
 
   def index
-    @students = Student.all
+   
+    @students = Student.search(params[:query])
+  
+    #should return students that match serch Query
+    # use method in model,
+    #should render _student form 
   end
 
   def student_params
