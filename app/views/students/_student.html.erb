@@ -1,11 +1,17 @@
+<%=form_tag @students do |s|%>
+<%= lable_tag(:search. "search for a student")%>
+<%= text_field_tag :search, params[:search]%>
+<%= submit_tag("Search",  :name => nil)%>
+<%end%>
+
 <ul>
   <li>
-    Name: <%= @student.name %>
+    Name: <%= student.name %>
   </li>
   <li>
-    Birthday: <%= @student.birthday.strftime("%m/%d/%Y")  %>
+    Birthday: <%= student.birthday.strftime("%m/%d/%Y")  %>
   </li>
   <li>
-    Hometown: <%= @student.hometown.capitalize %>
+    Hometown: <%= student.hometown.capitalize %>
   </li>
 </ul>
