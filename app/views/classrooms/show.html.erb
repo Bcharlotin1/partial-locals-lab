@@ -3,6 +3,6 @@ Classroom Info
 <%= render partial: "classroom" %>
 
 <%@classroom.students.each do |s|%>
-<%= render partial: "student",  locals: {student: s} %>
+<%= render partial: "students/student",  locals: {student: s} %>
 <%end%>
 </p>
